@@ -209,7 +209,7 @@ display: block;
 .inner-skills {
 display: block;
 }
-.skill-img:nth-child(3n){
+.skill-img:nth-child(3n){       /* 問題箇所 */
 margin-bottom: 80px;
 }
 th{
