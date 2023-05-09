@@ -22,13 +22,13 @@ padding-right: 25px;
 }
 .nav-flex {
 display: flex;
-justify-content: space-between;
 align-items: center;
 }
 .fas {
 color: #777;
 margin-top: 15px;
 margin-bottom: 15px;
+margin-right: auto;
 }
 
 .button {
@@ -42,10 +42,10 @@ transition: 0.3s;
 .button:hover{
 background: #333;
 }
-.button-box {
-text-align: right;
-}
 
+.hamburger-icon{
+display: none;
+}
 /* MAIN VISUAL */
 .keyvisual {
 background-image: url(../img/keyvisual/keyvisual.jpg);
@@ -58,12 +58,14 @@ padding-bottom: 400px;
 font-size: 65px;
 font-weight: 700;
 color: #6ba7ab;
+text-align: center;
 }
 .sub-title {
 font-size: 40px;
 font-weight: 700;
 color: #ffffff;
 margin-top: 30px;
+text-align: center;
 }
 
 /* WORK */
@@ -71,6 +73,7 @@ margin-top: 30px;
 background: #e3f2fd;
 padding-top: 50px;
 }
+
 .inner-works {
 display: grid;
 grid-template-columns: 2fr 3fr;
@@ -185,4 +188,98 @@ background: #cfd8dc;
 font-size: 10px;
 letter-spacing: 0.5px;
 text-align: right;
+}
+
+/* TAB ブレイクポイント　1199px以下 */
+@media screen and (max-width: 960px) {
+.keyvisual {
+padding-top: 250px;
+padding-bottom: 250px;
+}
+.work {
+text-align: center;
+padding-bottom: 50px;
+width: 100%;
+padding-left: 30px;
+padding-right: 30px;
+}
+.inner-works {
+display: block;
+}
+.inner-skills {
+display: block;
+}
+.skill-img:nth-child(3n){
+margin-bottom: 80px;
+}
+
+th{
+font-size: 14px;
+line-height: 22px;
+}
+td{
+font-size: 12px;
+}
+}
+
+
+/* SP　ブレイクポイント　767px以下 */
+@media screen and (max-width: 767px) {
+
+.button{
+display: none;
+}
+
+.hamburger{
+position: relative;
+height: 46px;
+width: 46px;
+border: 2px solid #8c8c8c;
+display: inline-block;
+box-sizing: border-box;
+border-radius: 4px;
+}
+.hamburger-bar {
+display: block;
+left: 7px;
+height: 2px;
+width: 28px;
+position: absolute;
+background: #8c8c8c;
+display: inline-block;
+box-sizing: border-box;
+}
+.hamburger-bar:nth-child(1){
+bottom: 30px;
+}
+.hamburger-bar:nth-child(2){
+bottom: 20px;
+}
+.hamburger-bar:nth-child(3){
+bottom: 10px;
+}
+
+.keyvisual {
+padding-top: 200px;
+padding-bottom: 200px;
+}
+.main-title {
+font-size: 40px;
+}
+.sub-title {
+font-size: 30px;
+}
+.sns {
+padding-top: 50px;
+padding-bottom: 50px;
+background: #e3f2fd;
+text-align: center;
+padding-left: 15px;
+padding-right: 15px;
+}
+.fab,.fa-solid {
+width: 100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
 }
