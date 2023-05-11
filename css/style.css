@@ -209,9 +209,14 @@ display: block;
 .inner-skills {
 display: block;
 }
-.skill-img:nth-child(3n){       /* 問題箇所 */
+.skill-img:nth-of-type(3n){
 margin-bottom: 80px;
 }
+
+.skill-img:last-child{
+margin-bottom: 0px;
+}
+
 th{
 font-size: 14px;
 line-height: 22px;
