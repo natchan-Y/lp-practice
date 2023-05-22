@@ -109,11 +109,12 @@ p {
   text-align: center;
 }
 
-.inner-skills {
+ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   margin-top: 50px;
+  font-size: 0;
 }
 
 li{
@@ -144,19 +145,20 @@ table{
   vertical-align: baseline;
   background: #f9f9f9;
   margin-top: 50px;
+  table-layout: fixed;
 }
 thead {
   background: #6ba7eb;
-  border-right: 2px solid #fff;
 }
-tr,th,td{
+
+th,td{
   padding: 10px 10px;
   border-right: 2px solid #fff;
   font-size: 16px;
   line-height: 26px;
 }
 
-thead,tr,th,td:last-child {
+td:last-child,th:last-child {
   border-right: none;
 }
 tr:nth-child(even){
@@ -169,6 +171,7 @@ tr:nth-child(even){
   padding-bottom: 200px;
   background: #e3f2fd;
   text-align: center;
+  font-size: 0;
 }
 .fab,.fa-solid {
   color: #8c8c8c;
@@ -204,14 +207,14 @@ footer {
 .work {
   text-align: center;
   padding-bottom: 50px;
-  width: 100%;
+
   padding-left: 30px;
   padding-right: 30px;
 }
 .inner-works {
   display: block;
 }
-.inner-skills {
+ul{
   display: block;
 }
 li:nth-of-type(3n){
